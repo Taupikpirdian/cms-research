@@ -1,0 +1,107 @@
+/*=============================================================================================	
+    Company    : PT Web Architect Technology - webarq.com
+    Document   : Stylesheet
+    Author     : Iqbal Wahyudi Pratama - iqbalwahyudip.com
+==============================================================================================*/
+/*=============================================================================================	
+    Company    : PT Web Architect Technology - webarq.com
+    Document   : Stylesheet
+    Author     : FrontEnd Team  
+==============================================================================================*/
+/* import bourbon - http://bourbon.io/docs */
+/*@import "bourbon/bourbon";*/
+/* color global
+----------------------------------------------------------------------------------------------*/
+.cfind-main div, .cfind-main input {
+  font-size: 12px; }
+
+.cfind-explorer > ul li {
+  font-weight: 400; }
+  .cfind-explorer > ul li.active {
+    font-weight: 700; }
+.cfind-explorer > ul > li > ul > li.active > a:hover {
+  text-decoration: none; }
+
+.cfind-tools ul li > div input[type=text], .cfind-tools ul li > div input[type=file] {
+  height: 26px;
+  line-height: 25px;
+  padding: 0 5px; }
+
+.cfind-tools ul li > div label {
+  line-height: 18px; }
+  .cfind-tools ul li > div label input[type=checkbox], .cfind-tools ul li > div label input[type=radio] {
+    margin-top: 0;
+    vertical-align: middle;
+    margin-right: 5px; }
+  .cfind-tools ul li > div label span {
+    vertical-align: middle; }
+.cfind-tools ul li > div input[type=submit] {
+  line-height: 1;
+  height: 30px;
+  padding: 0 40px; }
+.cfind-tools ul li[data-disable="1"] .fa, .cfind-tools ul li[data-disable="1"] .fa:hover {
+  opacity: .5;
+  cursor: default; }
+
+.cfind-tools ul li .fa-file-photo-o {
+  background-color: #008bd0; }
+
+.box-crop-side {
+  display: table;
+  width: 100%;
+  margin-top: 30px; }
+  .box-crop-side .left {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 15px; }
+  .box-crop-side .right {
+    display: table-cell;
+    width: 30%;
+    padding: 0 15px;
+    vertical-align: top;
+    padding-top: 40px; }
+
+.cfind-main, .cfind-select-area {
+  border-bottom: none; }
+
+.cfind-select-area {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  margin: 0;
+  color: #666; }
+  .cfind-select-area .tx {
+    display: inline-block;
+    vertical-align: middle; }
+    .cfind-select-area .tx input[type=text].size {
+      background-color: #efefef;
+      border: none;
+      color: #8e8e8e;
+      width: 70px;
+      float: left;
+      display: block;
+      outline: none; }
+    .cfind-select-area .tx .sat {
+      float: left;
+      background-color: #cccccc;
+      color: #6d6d6d;
+      display: block;
+      line-height: 25px;
+      padding-right: 8px;
+      padding-left: 8px;
+      border-left: solid #dadada 1px; }
+  .cfind-select-area .xsat {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px; }
+  .cfind-select-area .selection-area {
+    position: relative;
+    background: url("../images/material/bg-image-input.jpg") repeat;
+    text-align: center; }
+    .cfind-select-area .selection-area:after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 10px; }
+
+/*# sourceMappingURL=style-cfind.css.map */

@@ -1,0 +1,372 @@
+/*=============================================================================================	
+    Company    : PT Web Architect Technology - webarq.com
+    Document   : Stylesheet
+    Author     : Iqbal Wahyudi Pratama - iqbalwahyudip.com
+==============================================================================================*/
+/*=============================================================================================	
+    Company    : PT Web Architect Technology - webarq.com
+    Document   : Stylesheet
+    Author     : FrontEnd Team  
+==============================================================================================*/
+/* import bourbon - http://bourbon.io/docs */
+/*@import "bourbon/bourbon";*/
+/* color global
+----------------------------------------------------------------------------------------------*/
+html {
+  background: transparent; }
+
+body {
+  background: transparent url("../images/material/bg-body.jpg") center repeat; }
+
+.login-box {
+  margin: 0 auto;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0; }
+  .login-box .head {
+    background: #f5f5f5;
+    height: 82px;
+    display: table;
+    width: 100%;
+    /*.logo{
+    	float: left;background-image: url(../images/material/bg-logo.png);background-position: right bottom;height: 77px;width: 237px;
+    	img{margin-top: 5px;margin-left: 18px;max-width: 145px;max-height: 60px;}
+    }*/ }
+    .login-box .head .logo {
+      text-align: center;
+      padding: 10px 0;
+      display: table-cell;
+      vertical-align: middle; }
+      .login-box .head .logo img {
+        max-height: 60px; }
+    .login-box .head .login-img {
+      float: right;
+      padding-top: 17px;
+      padding-right: 10px;
+      display: none; }
+
+.login-logo, .register-logo {
+  margin-bottom: 5px; }
+
+.form-group {
+  position: relative; }
+
+.form-control-feedback {
+  right: auto;
+  left: 0;
+  height: 40px;
+  line-height: 40px; }
+
+.has-feedback {
+  position: relative; }
+  .has-feedback:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 35px;
+    bottom: 1px;
+    width: 1px;
+    background: #e8e8e8; }
+  .has-feedback .form-control {
+    padding: 0 12px 0 42px; }
+
+.form-control {
+  height: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px; }
+
+.sidebottom {
+  margin-bottom: 0; }
+  .sidebottom:after {
+    content: "";
+    clear: both;
+    display: block; }
+  .sidebottom .left {
+    float: left; }
+  .sidebottom .right {
+    float: right; }
+
+.footer {
+  font: 12px/35px arial;
+  color: #fff;
+  background-color: #094b69;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 2; }
+
+.copyright {
+  background-image: url(../images/material/shadow-applogin.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 35px;
+  text-align: center;
+  margin-top: -13px;
+  z-index: 4; }
+
+.btn-login {
+  background-image: url(../images/material/btn-login.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 32px;
+  width: 114px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  outline: none; }
+  .btn-login:focus, .btn-login:active, .btn-login:hover {
+    background-image: url(../images/material/btn-login.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none; }
+  .btn-login:active:focus {
+    outline: none; }
+
+.main-header .logo {
+  padding: 10px 15px;
+  line-height: 1; }
+  .main-header .logo img {
+    max-height: 30px; }
+  .main-header .logo .logo-mini img {
+    max-width: 80%; }
+
+.skin-blue .main-header {
+  /*.logo,.navbar{background-color: #14375d;}*/ }
+  .skin-blue .main-header li.user-header {
+    background-color: #00548e; }
+  .skin-blue .main-header .logo {
+    background-color: #152025; }
+  .skin-blue .main-header .navbar {
+    background-color: #14375d; }
+    .skin-blue .main-header .navbar .nav > li > a i {
+      display: inline-block;
+      margin-right: 5px; }
+
+.btn-app {
+  margin-left: 0; }
+
+.admin-filter button[type=button].multiselect {
+  height: 40px; }
+
+.box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
+  font-size: 24px;
+  font-weight: 600; }
+
+h3.form-subtitle {
+  border-bottom: none; }
+
+.btn.btn-midh {
+  height: 40px;
+  border-radius: 3px; }
+.btn.btn-add {
+  font-size: 12px;
+  background-color: #14375d !important; }
+  .btn.btn-add .fa {
+    display: inline-block;
+    margin-right: 5px; }
+
+.btn-primary {
+  background-color: #00558f; }
+
+/*cfind image*/
+.cfind ~ .cfind-tool {
+  /*top: 50%;
+  transform: translateY(-50%);*/
+  left: 320px; }
+  /*.cfind ~ .cfind-tool:before {
+    content: "Action : ";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 400; }*/
+  .cfind ~ .cfind-tool a {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    border-radius: 0;
+    width: 100px;
+    line-height: 25px;
+    text-align: left; }
+    .cfind ~ .cfind-tool a.cfind-download {
+      background-color: #008bd0; }
+  .cfind ~ .cfind-tool .fa-trash-o:before {
+    content: "Delete";
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px; }
+  .cfind ~ .cfind-tool .fa-trash-o:after {
+    content: "\f014";
+    float: right; }
+  .cfind ~ .cfind-tool .fa-download:before {
+    content: "Download";
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px; }
+  .cfind ~ .cfind-tool .fa-download:after {
+    content: "\f019";
+    float: right; }
+
+.cfind {
+  background-color: #dedede;
+  font-size: 0;
+  color: transparent;
+  /*background-size: contain, auto !important;*/ }
+
+/*cfind file
+.cfind[cfind-type="file"] ~ .cfind-tool {
+  position: relative;
+  display: block;
+  top: auto;
+  left: auto;
+  margin-top: 5px; }
+  .cfind[cfind-type="file"] ~ .cfind-tool:before {
+    content: "Action : ";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 400; }
+  .cfind[cfind-type="file"] ~ .cfind-tool a {
+    margin-bottom: 5px;
+    padding: 0 10px;
+    border-radius: 0;
+    width: auto;
+    line-height: 25px;
+    text-align: left; }
+    .cfind[cfind-type="file"] ~ .cfind-tool a.cfind-download {
+      background-color: #008bd0; }
+  .cfind[cfind-type="file"] ~ .cfind-tool .fa-trash-o:before {
+    content: "Reset";
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px; }
+  .cfind[cfind-type="file"] ~ .cfind-tool .fa-trash-o:after {
+    content: "\f014";
+    float: right; }
+  .cfind[cfind-type="file"] ~ .cfind-tool .fa-download:before {
+    content: "Download";
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px; }
+  .cfind[cfind-type="file"] ~ .cfind-tool .fa-download:after {
+    content: "\f019";
+    float: right; }
+*/
+.widgets .widget-tools {
+  right: 30px; }
+  .widgets .widget-tools a.widget-remove {
+    color: #dd4b39; }
+    .widgets .widget-tools a.widget-remove .fa-trash-o:before {
+      content: "Delete row";
+      font-size: 12px;
+      margin-right: 5px; }
+    .widgets .widget-tools a.widget-remove .fa-trash-o:after {
+      content: "\f014"; }
+    .widgets .widget-tools a.widget-remove:hover {
+      background-color: transparent;
+      color: #f00; }
+
+a.cfind-clear {
+  background-color: #dd4b39; }
+
+.cfind-detail .remove {
+  background-color: #dd4b39; }
+
+.select2-container {
+  max-width: 100%; }
+
+.content-header h1 {
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 26px; }
+  .content-header h1 sup, .content-header h1 i {
+    vertical-align: middle;
+    line-height: 26px; }
+  .content-header h1 i {
+    top: -2px;
+    position: relative;
+    margin-right: 5px; }
+  .content-header h1 sup {
+    margin-right: 10px;
+    font-size: 16px;
+    display: inline-block;
+    top: -3px;
+    color: #333 !important;
+    font-weight: 400 !important; }
+
+.privilege-list .parent h3 {
+  padding: 5px 0px;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 30px 0px 20px 0px;
+  border-bottom: thin solid #ececec;
+  color: #3c8dbc; }
+  .privilege-list .parent h3 span {
+    float: right;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 14px; }
+    .privilege-list .parent h3 span a {
+      display: inline-block;
+      margin: 0 5px;
+      width: 25px;
+      height: 25px;
+      background-size: 100% !important;
+      width: 20px;
+      height: 20px;
+      cursor: pointer; }
+      .privilege-list .parent h3 span a.check {
+        background: url("../images/material/checkall.png") no-repeat top center; }
+        .privilege-list .parent h3 span a.check.checked {
+          background-position: bottom center;
+          opacity: .5;
+          cursor: default; }
+      .privilege-list .parent h3 span a.uncheck {
+        background: url("../images/material/uncheckall.png") no-repeat top center; }
+        .privilege-list .parent h3 span a.uncheck.checked {
+          background-position: bottom center;
+          opacity: .5;
+          cursor: default; }
+.privilege-list .module {
+  padding: 0 20px; }
+  .privilege-list .module h4 {
+    font-size: 16px;
+    font-weight: 600; }
+  .privilege-list .module ul {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0; }
+    .privilege-list .module ul li .icheckbox_minimal-blue {
+      margin-right: 5px; }
+  .privilege-list .module label {
+    font-weight: normal;
+    cursor: pointer; }
+
+.table-responsive .bg-purple {
+  background-color: #00558f !important; }
+.table-responsive .bg-yellow {
+  background-color: #008bd0 !important; }
+
+.stickys .sticky.bg-purple {
+  background-color: #00558f !important; }
+
+/*# sourceMappingURL=style.css.map */

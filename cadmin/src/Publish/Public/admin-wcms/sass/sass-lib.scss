@@ -1,0 +1,72 @@
+/*=============================================================================================	
+    Company    : PT Web Architect Technology - webarq.com
+    Document   : Stylesheet
+    Author     : FrontEnd Team  
+==============================================================================================*/
+
+/* import bourbon - http://bourbon.io/docs */
+/*@import "bourbon/bourbon";*/
+
+@mixin transition($attr){
+    transition: $attr;
+    -webkit-transition: $attr;
+    -moz-transition: $attr;
+    -ms-transition: $attr;
+    -o-transition: $attr;
+}
+@mixin transform($attr){
+    transform: $attr;
+    -webkit-transform: $attr;
+    -moz-transform: $attr;
+    -ms-transform: $attr;
+    -o-transform: $attr;
+}
+@mixin borderRadius($attr){
+    border-radius: $attr;
+    -webkit-border-radius: $attr;
+    -moz-border-radius: $attr;
+    -ms-border-radius: $attr;
+    -o-border-radius: $attr;
+}
+@mixin boxShadow($attr){
+    box-shadow:  $attr;
+    -webkit-box-shadow: $attr;
+    -moz-box-shadow: $attr;
+    -ms-box-shadow: $attr;
+    -o-box-shadow: $attr
+}
+@mixin boxSizing($attr){
+    box-sizing:  $attr;
+    -webkit-box-sizing: $attr;
+    -moz-box-sizing: $attr;
+    -ms-box-sizing: $attr;
+    -o-box-sizing: $attr
+}
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}  
+}
+@mixin andplaceholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+}
+@mixin boxSizing($attr){
+    -webkit-box-sizing: $attr;
+    -moz-box-sizing: $attr;
+    box-sizing: $attr;
+}
+@mixin afterboth{
+    &:after{content: ""; clear: both; display: block;}
+}
+
+
+/* color global
+----------------------------------------------------------------------------------------------*/
+$c_111: #111;
+$c_333: #333;
+$c_666: #666;
+$c_999: #999;

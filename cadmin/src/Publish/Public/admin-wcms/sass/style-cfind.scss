@@ -1,0 +1,63 @@
+/*=============================================================================================	
+    Company    : PT Web Architect Technology - webarq.com
+    Document   : Stylesheet
+    Author     : Iqbal Wahyudi Pratama - iqbalwahyudip.com
+==============================================================================================*/
+@import "sass-lib";
+.cfind-main div, .cfind-main input{font-size: 12px;}
+.cfind-explorer {
+	> ul{
+		li{
+			font-weight: 400;
+			&.active{font-weight: 700;}
+		}
+		> li{
+			> ul{
+				> li{
+					&.active{
+						> a{
+							&:hover{text-decoration:none;}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.cfind-tools ul li > div input[type=text], .cfind-tools ul li > div input[type=file]{height: 26px;line-height: 25px;padding: 0 5px;}
+.cfind-tools ul li{
+	> div{
+		label{
+			line-height: 18px;
+			input[type=checkbox], input[type=radio]{margin-top: 0;vertical-align: middle;margin-right: 5px;}
+			span{vertical-align: middle;}
+		}
+		input[type=submit]{line-height: 1;height: 30px;padding: 0 40px;}
+	}
+	&[data-disable="1"]{
+		.fa,.fa:hover{opacity:.5;cursor: default;}
+	}
+}
+.cfind-tools ul li .fa-file-photo-o{background-color: #008bd0;}
+.box-crop-side{
+	display: table;width: 100%;margin-top: 30px;
+	.left{display: table-cell;vertical-align: top;padding:0 15px;}
+	.right{display: table-cell;width: 30%;padding:0 15px;vertical-align: top;padding-top: 40px;}
+}
+.cfind-main, .cfind-select-area{border-bottom: none;}
+
+.cfind-select-area{
+	font-family: 'Droid Sans', sans-serif;font-size: 13px;line-height: 22px;margin: 0;color:#666;
+	.tx{
+		display: inline-block;vertical-align: middle;
+		input[type=text]{
+			&.size{background-color: #efefef;border: none;color: #8e8e8e;width: 70px;float: left;display: block;outline: none;}
+		}
+		.sat{float: left;background-color: #cccccc;color: #6d6d6d;display: block;line-height: 25px;padding-right: 8px;padding-left: 8px;border-left: solid #dadada 1px;}
+	}
+	.xsat{display: inline-block;vertical-align: middle;margin: 0 5px;}
+	.selection-area{
+		position: relative;background:url('../images/material/bg-image-input.jpg')repeat;text-align: center;
+		&:after{position: absolute;top: 100%;left: 0;margin-top: 10px;}
+	}
+}

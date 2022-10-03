@@ -1,0 +1,210 @@
+/*=============================================================================================	
+    Company    : PT Web Architect Technology - webarq.com
+    Document   : Stylesheet
+    Author     : Iqbal Wahyudi Pratama - iqbalwahyudip.com
+==============================================================================================*/
+@import "sass-lib";
+html{background: transparent;}
+body{background: transparent url('../images/material/bg-body.jpg') center repeat;}
+
+.login-box{
+	margin:0 auto;@include transform(translateY(-50%));top: 50%;position: absolute;left: 0;right: 0;
+	.head{
+		background:#f5f5f5;height: 82px;display: table;width: 100%;
+		.logo{
+			text-align: center;padding: 10px 0;display: table-cell;vertical-align: middle;
+			img{max-height: 60px;}
+		}
+		/*.logo{
+			float: left;background-image: url(../images/material/bg-logo.png);background-position: right bottom;height: 77px;width: 237px;
+			img{margin-top: 5px;margin-left: 18px;max-width: 145px;max-height: 60px;}
+		}*/
+		.login-img{
+			float: right;padding-top: 17px;padding-right: 10px;display: none;
+		}
+	}
+}
+.login-logo, .register-logo{margin-bottom: 5px;}
+.form-group{
+	position: relative;
+}
+.form-control-feedback{right: auto;left: 0;height: 40px;line-height: 40px;}
+.has-feedback{
+	position: relative;
+	&:before{content:"";position: absolute;top: 1px;left: 35px;bottom: 1px;width: 1px;background: #e8e8e8;}
+	.form-control{
+		padding:0 12px 0 42px;
+	}
+}
+.form-control{height: 40px;@include borderRadius(5px);}
+.sidebottom{
+	margin-bottom: 0;@include afterboth;
+	.left{float: left;}
+	.right{float: right;}
+}
+.footer{
+	font: 12px/35px arial;color: #fff;background-color: #094b69;display: block;text-align: center;position: relative;z-index: 2;
+}
+.copyright{background-image: url(../images/material/shadow-applogin.png);background-repeat: no-repeat;background-position: center top;padding-top: 35px;text-align: center;margin-top: -13px;z-index: 4;}
+.btn-login{
+	background-image: url(../images/material/btn-login.jpg);background-repeat: no-repeat;background-position: center center;height: 32px;width: 114px;background-color: transparent;cursor: pointer;border: none;@include boxShadow(none);outline: none;
+	&:focus,&:active,&:hover{background-image: url(../images/material/btn-login.jpg);background-repeat: no-repeat;background-position: center center;background-color: transparent;border: none;@include boxShadow(none)}
+	&:active:focus{outline: none;}
+}
+.main-header{
+	.logo{
+		padding: 10px 15px;line-height: 1;
+		img{max-height: 30px;}
+		.logo-mini{
+			img{max-width: 80%;}
+		}
+	}
+}
+.skin-blue{
+	.main-header{
+		li{
+			&.user-header{background-color: #00548e;}
+		}
+		/*.logo,.navbar{background-color: #14375d;}*/
+		.logo{background-color: #152025}
+		.navbar{
+			background-color: #14375d;
+			.nav{
+				>li{
+					>a{
+						i{display: inline-block;margin-right: 5px;}
+					}
+				}
+			}
+		}
+	}
+}
+.btn-app{margin-left: 0;}
+.admin-filter{
+	button[type=button]{
+		&.multiselect{height: 40px;}
+	}
+}
+.box-header>.fa, .box-header>.glyphicon, .box-header>.ion, .box-header .box-title{font-size: 24px;font-weight: 600;}
+h3.form-subtitle{border-bottom: none;}
+.btn{
+	&.btn-midh{height: 40px;border-radius:3px;}
+	&.btn-add{
+		font-size: 12px;background-color: #14375d !important;
+		.fa{display: inline-block;margin-right: 5px;}
+	}
+}
+.btn-primary{background-color: #00558f;}
+
+/*cfind image*/
+.cfind[cfind-type="image"]~.cfind-tool{
+	top: 50%;transform:translateY(-50%);left: 320px;
+	&:before{content: "Action : ";display: inline-block;margin-right: 10px;font-size: 12px;font-weight: 400;}
+	a{
+		display: block;margin-bottom: 5px;padding: 0 10px;border-radius: 0;width: 100px;line-height: 25px;text-align: left;
+		&.cfind-download{background-color: #008bd0;}
+	}
+	.fa-trash-o{
+		&:before{content: "Delete";display: inline-block;margin-right: 5px;font-size: 12px;}
+		&:after{content: "\f014";float: right;};
+	}
+	.fa-download{
+		&:before {content: "Download";display: inline-block;font-size: 12px;margin-right: 5px;}
+		&:after{content: "\f019";float: right;}
+	}
+}
+.cfind[cfind-type=image]{background-color: #dedede;font-size: 0;color: transparent;background-size: contain, auto !important;}
+
+/*cfind file*/
+.cfind[cfind-type="file"]~.cfind-tool{
+	position: relative;display: block;top: auto;left: auto;margin-top: 5px;
+	&:before{content: "Action : ";display: inline-block;margin-right: 10px;font-size: 12px;font-weight: 400;}
+	a{
+		margin-bottom: 5px;padding: 0 10px;border-radius: 0;width: auto;line-height: 25px;text-align: left;
+		&.cfind-download{background-color: #008bd0;}
+	}
+	.fa-trash-o{
+		&:before{content: "Reset";display: inline-block;margin-right: 5px;font-size: 12px;}
+		&:after{content: "\f014";float: right;};
+	}
+	.fa-download{
+		&:before {content: "Download";display: inline-block;font-size: 12px;margin-right: 5px;}
+		&:after{content: "\f019";float: right;}
+	}
+}
+
+.widgets{
+	.widget-tools{
+		right: 30px;
+		a{
+			&.widget-remove{
+				color: #dd4b39;
+				.fa-trash-o{
+					&:before {content: "Delete row";font-size: 12px;margin-right: 5px;}
+					&:after {content: "\f014";}
+				}
+				&:hover{background-color: transparent;color: #f00;}
+			}
+		}
+	}
+}
+a.cfind-clear{background-color: #dd4b39;}
+
+.cfind-detail{
+	.remove{background-color: #dd4b39;}
+}
+
+.select2-container{max-width: 100%;}
+
+.content-header{
+	h1{
+		vertical-align: middle;font-size: 16px;line-height: 26px;
+		sup,i{vertical-align: middle;line-height: 26px;}
+		i{top: -2px;position: relative;margin-right: 5px;}
+		sup{margin-right: 10px;font-size: 16px;display: inline-block;top: -3px;color: #333 !important;font-weight: 400 !important;}
+	}
+}
+.privilege-list{
+	.parent{
+		h3{
+			padding:5px 0px;font-weight:400;font-size:22px;margin:30px 0px 20px 0px;border-bottom:thin solid #ececec;color: #3c8dbc;
+			span{
+				float: right;display: inline-block;margin-top: 5px;font-size: 14px;
+				a{
+					display: inline-block;margin: 0 5px;width: 25px;height: 25px;background-size: 100% !important;width: 20px;height: 20px;cursor: pointer;
+					&.check{
+						background: url('../images/material/checkall.png')no-repeat top center;
+						&.checked{background-position: bottom center;opacity: .5;cursor: default;}
+					}
+					&.uncheck{
+						background: url('../images/material/uncheckall.png')no-repeat top center;
+						&.checked{background-position: bottom center;opacity: .5;cursor: default;}
+					}
+				}
+			}
+		}
+	}
+	.module {
+		padding: 0 20px;
+		h4{font-size: 16px;font-weight: 600;}
+		ul {
+			list-style:none;margin:0 0 20px;padding:0;
+			li{
+				.icheckbox_minimal-blue{margin-right: 5px;}
+			}
+		}
+		label {font-weight:normal;cursor:pointer;}
+	}
+}
+
+
+.table-responsive{
+	.bg-purple{background-color: #00558f !important;}
+	.bg-yellow{background-color: #008bd0 !important;}
+}
+
+.stickys{
+	.sticky{
+		&.bg-purple{background-color: #00558f !important;}
+	}
+}

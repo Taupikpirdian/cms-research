@@ -1,0 +1,7 @@
+label.error {
+	display:none !important;
+}
+
+input.error, select.error, textarea.error {
+	border-color:#f00;
+}

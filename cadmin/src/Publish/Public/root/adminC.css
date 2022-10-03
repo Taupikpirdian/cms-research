@@ -1,0 +1,396 @@
+label.error {
+    font-weight:200;
+    color:darkorange;
+    font-size:13px;
+}
+
+.form-control.cfind {
+    cursor:pointer;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    color:rgba(255, 255, 255, 0);
+    background-color:#dedede;
+    height:107px;
+    width:300px;
+}
+.form-control.cfind[cfind-disable] {
+    cursor:auto;
+}
+
+.logo {
+    background-repeat:no-repeat; 
+    background-position:center center; 
+    background-size:contain; 
+    padding:5px; 
+    background-origin:content-box;
+}
+
+.list-date, th[key-name^=time] {
+    width:90px;
+}
+
+.list-act, th[key-name^=action] {
+    width:100px;
+}
+
+.list-act, td[key-name^=action] {
+	white-space:nowrap;
+}
+
+.table a.btn {
+	padding:3px 9px;
+	font-weight:100;
+}
+
+span.info {
+    font-weight:400;
+    color:#999;
+    font-size:13px;
+    line-height:14px;
+}
+
+input.numeric {
+    text-align:right;
+    max-width:200px;
+}
+
+.simple-editor {
+    height:53px !important;
+}
+
+.simple-editor-tool a {
+    font-size:11px;
+    color:#555;
+    display:inline-block;
+    padding:5px;
+    margin-right:2px;
+}
+
+.simple-editor-tool a.wysihtml-command-active, .simple-editor-tool a:hover {
+    color:#fff;
+    background-color:#3c8dbc;
+}
+
+.form-group .col-md-2 {
+    margin-left:-15px;
+}
+
+a.label, span.label {
+    font-size:14px;
+    font-weight:200;
+}
+
+.datepicker { width:200px; }
+.colorpicker { width:200px; }
+.ckeditor { height:304px !important; }
+
+.cfind.required ~ a.cfind-clear {
+	display:none;
+}
+
+em.form-info {
+	color:#555;
+	font-size:13px;
+	display:block;
+}
+
+/* CFIND */
+
+.cfind-tool {
+	position:absolute;
+	left:5px;
+	top:-4px;
+}
+
+.cfind-tool a {
+	line-height:20px;
+	width:20px;
+	text-align:center;
+	color:#fff;
+	border-radius:20px;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.cfind-tool i {
+    font-size:12px;
+}
+
+.cfind {
+    background-image:url('files/file.png');
+}
+.cfind[ext="doc"],.cfind[ext="docx"] {
+    background-image:url('files/file-doc.png');
+}
+.cfind[ext="xls"],.cfind[ext="xlsx"] {
+    background-image:url('files/file-xls.png');
+}
+.cfind[ext="pdf"] {
+    background-image:url('files/file-pdf.png');
+}
+.cfind.empty {
+    background-image:url('files/upload.png');
+}
+
+.cfind[ext="mp4"],
+.cfind[ext="mkv"],
+.cfind[ext="flv"],
+.cfind[ext="avi"] {
+	background-image:url('files/file-video.png');
+}
+
+a.cfind-clear {
+	background-color:#dd7171;
+}
+
+a.cfind-download {
+	background-color:#5673a3;
+}
+
+.cfind-alt-container i {
+    position:absolute;
+    line-height:25px;
+    display:block;
+    padding-left:10px;
+    color:#008bd0;
+}
+
+.cfind-alt-container input {
+    padding-left:20px;
+    height:25px;
+    box-sizing:border-box;
+    border:thin solid #aaa;
+}
+
+/* TABS */
+
+.tabs {
+	margin-bottom:40px;
+	max-width:600px;
+	border-bottom:5px solid #367fa9;
+}
+
+.tabs a {
+	display:inline-block;
+	padding:10px 50px;
+	color:#fff;
+	background-color:#204154;
+	margin-right:-4px;
+	transition:transform linear .1s;
+}
+
+.tabs a.active {
+	transform:translateY(5px);
+	background-color:#fff;
+	color:#000;
+	border-top:5px solid #367fa9;
+	border-left:thin solid #367fa9;
+	border-right:thin solid #367fa9;
+}
+
+h3.form-subtitle {
+	color:#367fa9;
+	border-bottom:thin solid #367fa9;
+	max-width:600px;
+	margin-bottom:15px;
+	margin-top:30px;
+	padding-bottom:5px;
+}
+
+.table-hover tr:hover td {
+    background-color:rgba(0, 139, 207, .1);
+}
+
+.box-body.scrolled .stickys {
+    top:0px;
+    position:fixed;
+}
+
+.stickys {
+	width:100%;
+	position:absolute;
+	top:0px;
+	z-index:999;
+	margin-left:-10px;
+}
+
+.sticky {
+	float:right;
+	text-align:left;
+}
+
+.box-header {
+	padding-top:40px;
+}
+
+.sticky .btn {
+	padding:5px 10px;
+	display:block;
+	max-width:250px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.sticky-lang > span {
+    display:block;
+    margin-left:-12px;
+    margin-right:-12px;
+    padding:0px 12px;
+}
+
+.sticky-lang ul {
+	display:none;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	margin-left:-12px;
+	position:absolute;
+	background:#fff;
+	border:thin solid #aaa;
+}
+
+.sticky-lang ul li a {
+	display:block;
+	padding:5px 20px;
+	text-align:left;
+}
+
+.sticky-lang ul a:hover, .sticky-lang ul a.active {
+	background-color:#8986C3;
+	color:#fff;   
+}
+
+
+/* WIDGET */
+
+.widgets {
+    margin-bottom:30px;
+}
+
+.widgets .widgets {
+    padding-left:17%;
+}
+
+.widget-container > .widget-row {
+	margin-bottom:30px;
+	position:relative;
+	transition:transform linear .3s;
+	background-color:#fff;
+	border-bottom:thin dashed #aaa;
+}
+
+.widgets[widget-max="1"] > .widget-container > .widget-row {
+	border-bottom:none;
+}
+
+.widgets .widget-tools {
+	position:absolute;
+	top:-22px;
+	right:0px;
+	color:#fff;
+}
+
+.widget-tools a {
+	display:inline-block;
+	padding:3px 5px;
+}
+
+.widget-tools a:hover {
+	background-color:#367fa9;
+	color:#fff;
+}
+
+.widget-tools a.widget-remove {
+	color:#f00;
+}
+
+.widget-add {
+	margin-top:-10px;
+	margin-bottom:10px;
+}
+
+.widget-tools a.widget-remove:hover {
+	background-color:#f00;
+	color:#fff;
+}
+
+.widget-container > .widget-row:first-child > .widget-tools a.widget-sort-up {
+	display:none;
+}
+
+.widget-container > .widget-row:last-child > .widget-tools a.widget-sort-down {
+	display:none;
+}
+
+/* LISTING */
+
+.table-responsive tr.selected td {
+    background-color:#B4DFF7;
+}
+
+.icheckbox_minimal-blue.checked {
+    background-color:#fff;
+}
+
+.admin-filter {
+    display:table-row;
+    padding-right:20px;
+    margin:20px 0px;
+}
+.admin-filter > div {
+    display:table-cell;
+    padding-left:10px;
+    vertical-align:top;
+}
+
+.table-responsive {
+    min-height:300px;
+    padding:0px 0px 30px 0px;
+}
+
+.admin-filter input[name=search] {
+    width:120px;
+}
+
+.admin-filter select[name=sort] {
+    width:160px;
+}
+
+.admin-filter button[type=button].multiselect {
+    width:200px;
+}
+
+.admin-filter button[type=button].multiselect .multiselect-selected-text {
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    padding-right:15px;
+    text-align:left;
+}
+
+.admin-filter button[type=button].multiselect .caret {
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+
+.table-responsive .table {
+    min-width:700px;
+}
+
+.table-responsive .table>tbody>tr>th {
+    border-top:thin solid #ddd;
+    padding-top:20px;
+}
+
+.table-responsive .table tr:last-child td {
+    border-bottom:thin solid #ddd;
+}
+
+@media screen and (max-width:1024px) {
+    .admin-filter {
+        width:100%;
+    }
+}
